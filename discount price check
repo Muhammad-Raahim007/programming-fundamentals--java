@@ -1,0 +1,13 @@
+public class discount {
+  public static void main(String[] args)
+{
+    //original price is 500,discount is 50%,then discounted price is 250
+   // original price is 1000 discount is 10%,then discounted price is 900
+    //original price is 500,discount is 20%,then discounted price is 400 
+    double op = 500;
+    double d=20 ;
+    double dp=op*d/100;
+    double dsp=op-dp;
+    System.out.println(dsp);
+  }
+}
