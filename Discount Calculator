@@ -4,12 +4,12 @@ class DiscountCalculator {
 {
     Scanner xyz = new Scanner(System.in);
     double csp=-1;
-    while (csp<0) {
+    while (csp<=0) {
       System.out.print("Enter current selling price: ");
       csp = xyz.nextDouble();
       }
       double dp=-1;
-      while(dp<=0){
+      while(dp<0){
     System.out.print("Enter discount percentage: ");
     dp = xyz.nextDouble();
  }
