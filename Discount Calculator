@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class DiscountCalculator {
+  public static void main(String[] args) 
+{
+    Scanner xyz = new Scanner(System.in);
+    double csp=-1;
+    while (csp<0) {
+      System.out.print("Enter current selling price: ");
+      csp = xyz.nextDouble();
+      }
+      double dp=-1;
+      while(dp<=0){
+    System.out.print("Enter discount percentage: ");
+    dp = xyz.nextDouble();
+ }
+      double dsp = csp - dp;
+    System.out.println("discounted selling price is:");
+    System.out.println(dsp);
+    System.out.println("Program ended");
+  }
+}
