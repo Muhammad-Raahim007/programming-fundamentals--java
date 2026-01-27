@@ -8,11 +8,12 @@ class DiscountCalculator {
       System.out.print("Enter current selling price: ");
       csp = xyz.nextDouble();
       }
-      double dp=-1;
+      double dpp=-1;
       while(dp<0){
     System.out.print("Enter discount percentage: ");
-    dp = xyz.nextDouble();
+    dpp = xyz.nextDouble();
  }
+     double dp=csp*dpp/100;
       double dsp = csp - dp;
     System.out.println("discounted selling price is:");
     System.out.println(dsp);
