@@ -1,0 +1,152 @@
+import java.util.Scanner;
+   class PercentageCalculator {
+	public static void main(String[] args) {
+    Scanner xyz=new Scanner(System.in);
+    System.out.print("enter first subject marks : ");
+    double a =xyz.nextDouble();
+    System.out.print("....out of....");
+    int total1 =xyz.nextInt();
+    double p1=a/total1*100;
+    System.out.print("percentage : ");
+    System.out.println(p1);
+    if(p1>=80){
+        System.out.println("A+");
+    }
+    else if(p1<=70){
+        System.out.println("A");
+    }
+     else if(p1<=60){
+        System.out.println("B");
+    }
+    else if(p1>=50){
+        System.out.println("C");
+    }
+    else if(p1<50){
+        System.out.println("fail");
+    }
+    System.out.print("enter second subject marks : ");
+    double b =xyz.nextDouble();
+    System.out.print("....out of....");
+    int total2 =xyz.nextInt();
+     double p2=b/total2*100;
+    System.out.println("percentage : " + p2);
+    if(p2>=80){
+        System.out.println("A+");
+    }
+    else if(p2<=70){
+        System.out.println("A");
+    }
+     else if(p2<=60){
+        System.out.println("B");
+    }
+    else if(p2>=50){
+        System.out.println("C");
+    }
+    else if(p2<50){
+        System.out.println("fail");
+    }
+    System.out.print("enter third subject marks : ");
+    double c =xyz.nextDouble();
+    System.out.print("....out of....");
+    int total3 =xyz.nextInt();
+     double p3=c/total3*100;
+    System.out.println("percentage : " + p3);
+    if(p3>=80){
+        System.out.println("A+");
+    }
+    else if(p3<=70){
+        System.out.println("A");
+    }
+     else if(p3<=60){
+        System.out.println("B");
+    }
+    else if(p3>=50){
+        System.out.println("C");
+    }
+    else if(p3<50){
+        System.out.println("fail");
+    }
+    System.out.print("enter fourth subject marks : ");
+    double d =xyz.nextDouble();
+    System.out.print("....out of....");
+    int total4 =xyz.nextInt();
+     double p4=d/total4*100;
+    System.out.println("percentage : " + p4);
+    if(p4>=80){
+        System.out.println("A+");
+    }
+    else if(p4<=70){
+        System.out.println("A");
+    }
+     else if(p4<=60){
+        System.out.println("B");
+    }
+    else if(p4>=50){
+        System.out.println("C");
+    }
+    else if(p4<50){
+        System.out.println("fail");
+    }
+    System.out.println("enter fifth subject marks");
+    double e =xyz.nextDouble();
+    System.out.println("....out of");
+    int total5 =xyz.nextInt();
+     double p5=e/total5*100;
+    System.out.println("percentage : " + p5);
+    if(p5>=80){
+        System.out.println("A+");
+    }
+    else if(p5<=70){
+        System.out.println("A");
+    }
+     else if(p5<=60){
+        System.out.println("B");
+    }
+    else if(p5>=50){
+        System.out.println("C");
+    }
+    else if(p5<50){
+        System.out.println("fail");
+    }
+    System.out.print("enter sixth subject marks : ");
+    double f =xyz.nextDouble();
+    System.out.print("....out of....");
+    int total6 =xyz.nextInt();
+     double p6=f/total6*100;
+    System.out.println("percentage : " +  p6);
+    if(p6>=80){
+        System.out.println("Grade : A+");
+    }
+    else if(p6<=70){
+        System.out.println("Grade : A");
+    }
+     else if(p6<=60){
+        System.out.println("Grade : B");
+    }
+    else if(p6>=50){
+        System.out.println("Grade : C");
+    }
+    else if(p6<50){
+        System.out.println("fail");
+    }
+    double totalSubject=a+b+c+d+e+f;
+    int totalOutOf =total1+total2+total3+total4+total5+total6;
+    double percentage =totalSubject/totalOutOf*100;
+    System.out.println(percentage);
+     if(percentage>=80){
+        System.out.println("Final Grade : A+");
+    }
+    else if(percentage<=70){
+        System.out.println("FinalGrade : A");
+    }
+     else if(percentage<=60){
+        System.out.println("Final Grade : B");
+    }
+    else if(percentage>=50){
+        System.out.println("Final Grade : C");
+    }
+    else if(percentage<50){
+        System.out.println("fail");
+    }
+	}
+}
