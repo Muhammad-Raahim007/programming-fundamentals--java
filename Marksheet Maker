@@ -12,16 +12,16 @@ import java.util.Scanner;
     if(p1>=80){
         System.out.println("A+");
     }
-    else if(p1<=70){
+    else if(p1>=70){
         System.out.println("A");
     }
-     else if(p1<=60){
+     else if(p1>=60){
         System.out.println("B");
     }
     else if(p1>=50){
         System.out.println("C");
     }
-    else if(p1<50){
+    else {
         System.out.println("fail");
     }
     System.out.print("enter second subject marks : ");
@@ -33,16 +33,16 @@ import java.util.Scanner;
     if(p2>=80){
         System.out.println("A+");
     }
-    else if(p2<=70){
+    else if(p2>=70){
         System.out.println("A");
     }
-     else if(p2<=60){
+     else if(p2>=60){
         System.out.println("B");
     }
     else if(p2>=50){
         System.out.println("C");
     }
-    else if(p2<50){
+    else {
         System.out.println("fail");
     }
     System.out.print("enter third subject marks : ");
@@ -54,16 +54,16 @@ import java.util.Scanner;
     if(p3>=80){
         System.out.println("A+");
     }
-    else if(p3<=70){
+    else if(p3>=70){
         System.out.println("A");
     }
-     else if(p3<=60){
+     else if(p3>=60){
         System.out.println("B");
     }
     else if(p3>=50){
         System.out.println("C");
     }
-    else if(p3<50){
+    else{
         System.out.println("fail");
     }
     System.out.print("enter fourth subject marks : ");
@@ -75,16 +75,16 @@ import java.util.Scanner;
     if(p4>=80){
         System.out.println("A+");
     }
-    else if(p4<=70){
+    else if(p4>=70){
         System.out.println("A");
     }
-     else if(p4<=60){
+     else if(p4>=60){
         System.out.println("B");
     }
     else if(p4>=50){
         System.out.println("C");
     }
-    else if(p4<50){
+    else {
         System.out.println("fail");
     }
     System.out.println("enter fifth subject marks");
@@ -96,16 +96,16 @@ import java.util.Scanner;
     if(p5>=80){
         System.out.println("A+");
     }
-    else if(p5<=70){
+    else if(p5>=70){
         System.out.println("A");
     }
-     else if(p5<=60){
+     else if(p5>=60){
         System.out.println("B");
     }
     else if(p5>=50){
         System.out.println("C");
     }
-    else if(p5<50){
+    else {
         System.out.println("fail");
     }
     System.out.print("enter sixth subject marks : ");
@@ -117,16 +117,16 @@ import java.util.Scanner;
     if(p6>=80){
         System.out.println("Grade : A+");
     }
-    else if(p6<=70){
+    else if(p6>=70){
         System.out.println("Grade : A");
     }
-     else if(p6<=60){
+     else if(p6>=60){
         System.out.println("Grade : B");
     }
     else if(p6>=50){
         System.out.println("Grade : C");
     }
-    else if(p6<50){
+    else {
         System.out.println("fail");
     }
     double totalSubject=a+b+c+d+e+f;
@@ -136,16 +136,16 @@ import java.util.Scanner;
      if(percentage>=80){
         System.out.println("Final Grade : A+");
     }
-    else if(percentage<=70){
+    else if(percentage>=70){
         System.out.println("FinalGrade : A");
     }
-     else if(percentage<=60){
+     else if(percentage>=60){
         System.out.println("Final Grade : B");
     }
     else if(percentage>=50){
         System.out.println("Final Grade : C");
     }
-    else if(percentage<50){
+    else {
         System.out.println("fail");
     }
 	}
