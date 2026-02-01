@@ -1,0 +1,53 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner x=new Scanner(System.in);
+		Random r=new Random();
+		
+		int userScore=0;
+		int compScore=0;
+		
+				System.out.println("0=rock, 1=paper, 2=scissor");
+				
+		for(int i=1;i<=5;i++){
+		    
+		System.out.println("enter your choice");
+		
+		int user=x.nextInt();
+		int comp=r.nextInt(3);
+		
+		if(user>=0&&user<=2)
+	{	    
+		System.out.println("Computer chose  "+comp);
+		
+		if(comp==user){
+		    System.out.println("draw");
+		    }
+		else if((user==0&&comp==2)||(user==1&&comp==0)||(user==2&&comp==1)){
+		    System.out.println("You won");
+		    userScore++;
+		    }
+		   	else {
+		    System.out.println("You lose");
+		    compScore++;
+		    }
+		      System.out.println("Round" +i);
+	}
+		   else{
+		     System.out.println("Enter your choise again");
+	       		}   
+		}
+		System.out.println("final score  you  " +userScore + "computer score  " + compScore);
+		if(compScore<userScore)  {
+		    System.out.println("You are the final winner");}
+		    else if(userScore<compScore){
+		    System.out.println("Computer is the final winner");
+		    }
+		    else{
+		        System.out.println("It's a draw");
+}
+	}
+}
