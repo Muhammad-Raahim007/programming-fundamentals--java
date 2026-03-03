@@ -1,0 +1,24 @@
+public class RowSum {
+public static void main(String[] args) {
+// A 2D array with 3 rows and 3 columns
+int[][] matrix = {
+{3, 1, 9}, // Sum: 13
+{4, 7, 1}, // Sum: 12
+{1, 2, 3}  // Sum: 6
+};
+
+// Outer loop goes through each row  
+    for (int r = 0; r < matrix.length; r++) {  
+        int rowSum = 0; // Reset sum to 0 for every new row  
+
+        // Inner loop goes through each element in that row  
+        for (int c = 0; c < matrix[r].length; c++) {  
+            rowSum += matrix[r][c]; // Add current element to the sum  
+        }  
+
+        // Print the total for this specific row  
+        System.out.println("Sum of row " + r + ": " + rowSum);  
+    }  
+}
+
+}
