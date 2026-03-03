@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class MagicSquare {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[][] a = new int[3][3];
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                a[i][j] = sc.nextInt();
+            }
+        }
+
+        int sum = a[0][0] + a[0][1] + a[0][2];
+        boolean magic = true;
+
+        for (int i = 0; i < 3; i++) {
+            int row = 0;
+            for (int j = 0; j < 3; j++) {
+                row += a[i][j];
+            }
+            if (row != sum) magic = false;
+        }
+
+        for (int j = 0; j < 3; j++) {
+            int col = 0;
+            for (int i = 0; i < 3; i++) {
+                col += a[i][j];
+            }
+            if (col != sum) magic = false;
+        }
+
+        int d1 = a[0][0] + a[1][1] + a[2][2];
+        int d2 = a[0][2] + a[1][1] + a[2][0];
+
+        if (d1 != sum || d2 != sum) magic = false;
+
+        if (magic)
+            System.out.println("Magic Square");
+        else
+            System.out.println("Not Magic Square");
+
+        sc.close();
+    }
+}
