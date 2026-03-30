@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class BinaryAssignment {
+
+    public static int[ ] getBinary(int num) {
+        int temp = num;
+        int count = 0;
+
+        while (temp > 0) {
+            temp = temp / 2;
+            count++;
+        }
+
+        int[ ] binary = new int[count];
+
+        for (int i = count - 1; i >= 0; i--) {
+            binary[i] = num % 2;
+            num = num / 2;
+        }
+
+        return binary;
+    }
+
+    public static void main(String[ ] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter number: ");
+        int num = input.nextInt();
+
+        int[ ] result = getBinary(num);
+
+        System.out.print("Binary (Part a): ");
+        for (int i = 0; i < result.length; i++) {
+            System.out.print(result[i]);
+        }
+
+        System.out.print("\nBinary Array (Part b): ");
+        for (int i = 0; i < result.length; i++) {
+            System.out.print(result[i] + " ");
+        }
+
+        String str = "";
+        for (int i = 0; i < result.length; i++) {
+            str = str + result[i];
+        }
+
+        System.out.println("\nBinary String (Part c): " + str);
+    }
